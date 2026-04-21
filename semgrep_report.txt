@@ -1,0 +1,16 @@
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                     
+  [36m[22m[24m  VulnerableApp.java[0m
+    ❯❱ java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the
+          SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement)    
+          instead. You can obtain a PreparedStatement using 'connection.prepareStatement'.                    
+          Details: https://sg.run/AvkL                                                                        
+                                                                                                              
+           33┆ stmt.executeQuery(query);
+
